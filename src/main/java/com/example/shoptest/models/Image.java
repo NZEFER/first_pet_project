@@ -4,11 +4,13 @@ import jakarta.persistence.*;
 import jakarta.security.auth.message.callback.PrivateKeyCallback;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Table(name = "Images")
 @AllArgsConstructor
+@NoArgsConstructor
 public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
