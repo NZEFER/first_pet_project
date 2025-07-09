@@ -4,7 +4,11 @@
     <title>SHOP</title>
 </head>
 <body>
-<h1>SHOP</h1><hr>
+<h1>SHOP | <a href = "/login">Войти</a></h1><hr>
+<form action = "/logout" method = "post">
+    <input type = "hidden" name = "_csrf" value = ${_csrf.token}>
+    <input type = "submit" value = "выйти"/>
+</form>
 <h4>Список товаров</h4>
 <form action = "/" method = "get">
     Поиск по названию товара <input type = "text" name = "title"><br>
